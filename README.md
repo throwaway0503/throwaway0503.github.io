@@ -1,5 +1,3 @@
-si estas leyendo esto, felicidades por encontrar el github del proyecto xd
+si estas leyendo esto, felicidades por encontrar el github del proyecto.
 
-el codigo no es increible, pero sirve, considerando q fue un mini proyecto rusheado en como 3 dias xd
-
-the game
+si, y solo si, estas leyendo esto: se vienen cositas :3
