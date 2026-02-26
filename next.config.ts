@@ -1,11 +1,11 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
+/** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: process.env.NEXT_PUBLIC_PAGES_BASE_PATH,
+  output: "export",
   images: {
-    unoptimized: true
-  }
+    unoptimized: true,
+  },
 };
 
 // Use module.exports to ensure everything is included
