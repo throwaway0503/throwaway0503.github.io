@@ -7,7 +7,7 @@ export const BASE_PATH = "/status-update/";
 // Title component
 
 interface TitleProps {
-  title: String;
+  title: string;
 }
 
 const Title: React.FC<TitleProps> = ({ title }) => {
@@ -33,16 +33,16 @@ export const Divider: React.FC = () => {
 // Ref Button components
 
 interface RefButtonProps {
-  href?: String;
+  href?: string;
 }
 
 export const PrevRefButton: React.FC<RefButtonProps> = ({ href }) => {
-  if (href === undefined) {
+  if (!href) {
     return <EmptyRefButton />;
   }
 
   const handleClick = () => {
-    window.location.href = BASE_PATH + href.toString();
+    window.location.href = BASE_PATH + href;
   };
 
   return (
@@ -56,12 +56,12 @@ export const PrevRefButton: React.FC<RefButtonProps> = ({ href }) => {
 };
 
 export const NextRefButton: React.FC<RefButtonProps> = ({ href }) => {
-  if (href === undefined) {
+  if (!href) {
     return <EmptyRefButton />;
   }
 
   const handleClick = () => {
-    window.location.href = BASE_PATH + href.toString();
+    window.location.href = BASE_PATH + href;
   };
 
   return (
@@ -85,7 +85,7 @@ export const EmptyRefButton: React.FC = () => {
 // Video
 
 interface VideoProps {
-  src: String;
+  src: string;
   width?: number;
 }
 
@@ -96,7 +96,7 @@ export const Video: React.FC<VideoProps> = ({ src, width }) => {
   return (
     <>
       <video controls width={width}>
-        <source src={src.toString()} type="video/mp4" />
+        <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </>
@@ -106,14 +106,14 @@ export const Video: React.FC<VideoProps> = ({ src, width }) => {
 // Audio
 
 interface AudioProps {
-  src: String;
+  src: string;
 }
 
 export const Audio: React.FC<AudioProps> = ({ src }) => {
   return (
     <>
       <audio controls>
-        <source src={src.toString()} type="audio/mpeg" />
+        <source src={src} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
     </>
@@ -123,10 +123,10 @@ export const Audio: React.FC<AudioProps> = ({ src }) => {
 // Main Page Component
 
 interface MainPageProps {
-  title: String;
+  title: string;
   Content: React.FC;
-  prevRef?: String;
-  nextRef?: String;
+  prevRef?: string;
+  nextRef?: string;
 }
 
 export const MainPage: React.FC<MainPageProps> = ({
@@ -146,10 +146,9 @@ export const MainPage: React.FC<MainPageProps> = ({
       <Divider />
 
       <div className="ref-button-container">
-        <PrevRefButton href={prevRef?.toString()} />
-        <NextRefButton href={nextRef?.toString()} />
+        <PrevRefButton href={prevRef} />
+        <NextRefButton href={nextRef} />
       </div>
     </main>
   );
 };
-

@@ -1,8 +1,8 @@
 export default function Home() {
   return (
     <>
-      <div className="main"></div>
+      {/* TODO: do something cool with this shit */}
+      <div className="main">:3</div>
     </>
   );
 }
-

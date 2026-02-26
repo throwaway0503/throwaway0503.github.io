@@ -23,7 +23,7 @@ const CurrentContent: React.FC = () => {
       </p>
       <img
         style={{ cursor: "pointer" }}
-        src={"fiestita.jpg"}
+        src={"/status-update/fiestita.jpg"}
         onClick={fiestita}
       />
       <p>
@@ -31,7 +31,7 @@ const CurrentContent: React.FC = () => {
         que tenía que decir antes, así que allí queda.
       </p>
       <div style={{ cursor: "pointer" }} onClick={banca}>
-        <img src={"banca.jpg"} />
+        <img src={"/status-update/banca.jpg"} />
       </div>
       <p>
         Tercero, Pachis. Gracias por estar allí para escuchar mis mierdas en
@@ -43,7 +43,11 @@ const CurrentContent: React.FC = () => {
         mostré la página y se ofreció a corregir varias faltas ortográficas por
         allí XD
       </p>
-      <img style={{ cursor: "pointer" }} src={"pachis.png"} onClick={pachis} />
+      <img
+        style={{ cursor: "pointer" }}
+        src={"/status-update/pachis.png"}
+        onClick={pachis}
+      />
       <p>Y bueno, ahora sí sería todo...</p>
     </>
   );
@@ -59,4 +63,3 @@ export default function Home() {
     />
   );
 }
-
