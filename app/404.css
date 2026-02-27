@@ -1,18 +1,18 @@
 body {
-    background-color: black;
-    color: rgb(186,187,206);
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 125%;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  background-color: black;
+  color: rgb(186, 187, 206);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 125%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .dog {
-    cursor: pointer;
+  cursor: pointer;
 }

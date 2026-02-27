@@ -1,10 +1,12 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Gracias por tu alma!!!'
+  title: "Gracias por tu alma!!!",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>{children}</body>
